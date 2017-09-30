@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-style": "node-sass --output-style compressed -o dist/ source/styles/style.scss",
-    "build": "node index.js && npm run build-style",
+    "build": "mkdir -p dist && node index.js && npm run build-style",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Hanbyul Jo",
