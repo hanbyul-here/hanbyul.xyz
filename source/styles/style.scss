@@ -1,0 +1,10 @@
+@import './custom-bootstrap';
+@import './variables';
+@import './widgets';
+@import './nav';
+@import './typography';
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+.container {
+  max-width: 760px;
+}

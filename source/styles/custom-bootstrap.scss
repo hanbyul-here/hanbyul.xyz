@@ -1,0 +1,14 @@
+// Core variables and mixins
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins";
+
+// Reset and dependencies
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_normalize";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_print";
+//@import "bootstrap/glyphicons";
+
+// Core CSS
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_tables";

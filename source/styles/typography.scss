@@ -1,0 +1,68 @@
+body {
+  color: #333;
+  font-size: 16px;
+  font-family: 'Spoqa Han Sans', sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #ff00bf;
+}
+
+a:hover, :focus {
+  color: #897684;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #333;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+p {
+  color: #555;
+}
+
+
+h1, h2, h3 {
+  margin-top: 48px;
+  margin-bottom: 12px;
+  // Scale back margins on mobile
+  @media (max-width: $screen-sm) {
+    margin-top: 24px;
+    margin-bottom: 6px;
+  }
+}
+
+h1 {
+  font-size: 42px;
+  @media (max-width: $screen-sm) {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  @media (max-width: $screen-sm) {
+    font-size: 26px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  @media (max-width: $screen-sm) {
+    font-size: 18px;
+  }
+}
+
+// For use in blogs
+h4 {
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+h5 {
+  font-size: 14px;
+  margin-top: 24px;
+}

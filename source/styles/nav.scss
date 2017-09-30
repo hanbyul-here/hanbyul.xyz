@@ -1,0 +1,37 @@
+nav {
+  padding-top: 36px;
+}
+
+
+#logo-wrap {
+  margin-top: 0;
+}
+
+
+nav a:hover,:focus {
+  text-decoration: none;
+}
+
+#logo-wrap {
+  margin-bottom: 0px;
+}
+
+#logo-wrap:hover, h1#logo-wrap:focus {
+  color: #b14e98;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    } to {
+        transform: rotateY(360deg);
+    }
+}
+.dia {
+  display: inline-block;
+  font-size: 0.65em;
+  letter-spacing: 0em;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+}

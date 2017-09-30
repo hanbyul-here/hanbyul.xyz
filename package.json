@@ -1,0 +1,19 @@
+{
+  "name": "hanbyul.xyz",
+  "version": "1.0.0",
+  "description": "Hanbyul's homepage",
+  "main": "index.js",
+  "scripts": {
+    "build-style": "node-sass --output-style compressed -o dist/ source/styles/style.scss",
+    "build": "node index.js && npm run build-style",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hanbyul Jo",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jsdom": "^11.2.0",
+    "node-sass": "^4.5.3",
+    "rss-to-json": "^1.0.2"
+  }
+}
