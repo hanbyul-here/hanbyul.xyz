@@ -12,6 +12,7 @@ const Feed = require('rss-to-json');
 
 const linkDataPath = __dirname + '/data/links.json';
 const projectDataPath = __dirname + '/data/projects.json';
+const postDataPath = __dirname + '/data/posts.json';
 const baseHTMLPath = __dirname + '/source/index.html';
 const outputPathPrefix = __dirname + '/dist/';
 
@@ -39,19 +40,14 @@ const buildHTMLWithLocalData = function (dataPath) {
   return htmlToReturn;
 }
 
-const readMediumData = function () {
-  const mediumLink = 'https://medium.com/feed/@Hanbyul';
-  return new Promise(function(resolve, reject) {
-    Feed.load(mediumLink, function (err, rss) {
-      if (err) reject(err);
-      let htmlToReturn = '<ul>';
-      for (const post of rss.items) {
-        htmlToReturn += `<li><a href="${post.url}"> ${post.title} </a></li>`;
-      }
-      htmlToReturn += '</ul>';
-      resolve(htmlToReturn);
-    });
-  });
+const buildHTMLWithLocalPostData = function (dataPath) {
+  let htmlToReturn = '<ul>';
+  const data = readLocalData(dataPath);
+  for (const post of data) {
+    htmlToReturn += `<li><a href="${post.link}"> ${post.title} </a></li>`;
+  }
+  htmlToReturn += '</ul>';
+  return htmlToReturn;
 }
 
 
@@ -62,15 +58,14 @@ function writeResultHTML () {
 
     const snsLinks = buildHTMLWithLocalData(linkDataPath);
     const projectLinks = buildHTMLWithLocalData(projectDataPath);
+    const postLinks = buildHTMLWithLocalPostData(postDataPath);
 
     baseDOM.window.document.getElementById(linkDOMID).innerHTML = snsLinks;
     baseDOM.window.document.getElementById(projectDOMID).innerHTML = projectLinks;
-    //baseDOM.window.document.getElementById(postDOMID).innerHTML = postLinks;
-    readMediumData()
-    .then(postLinks => {
-      baseDOM.window.document.getElementById(postDOMID).innerHTML = postLinks;
+    baseDOM.window.document.getElementById(postDOMID).innerHTML = postLinks;
+
       stream.end(baseDOM.window.document.documentElement.innerHTML);
-    })
+
   })
 
 }
