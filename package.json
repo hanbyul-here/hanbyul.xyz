@@ -13,7 +13,6 @@
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
     "jsdom": "^11.2.0",
-    "node-sass": "^4.5.3",
-    "rss-to-json": "^1.0.2"
+    "node-sass": "^4.5.3"
   }
 }

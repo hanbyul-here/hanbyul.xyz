@@ -8,7 +8,6 @@
 const jsdom = require('jsdom');
 const fs = require('fs');
 const { JSDOM } = jsdom;
-const Feed = require('rss-to-json');
 
 const linkDataPath = __dirname + '/data/links.json';
 const projectDataPath = __dirname + '/data/projects.json';
