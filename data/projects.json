@@ -1,11 +1,7 @@
 [
   {
-    "name": "OBJ map tile exporter",
-    "link": "https://hanbyul-here.github.io/tile-exporter/"
-  },
-  {
-    "name": "SVG map tile exporter",
-    "link": "http://svg-exporter.netlify.com/"
+    "name": "Earthquakes in Korean Peninsula",
+    "link": "https://hanbyul-here.github.io/earthquakes-in-korea/public/"
   },
   {
     "name": "Seoul building explorer",
@@ -14,5 +10,13 @@
   {
     "name": "Mapping the candles",
     "link": "https://hanbyul-here.github.io/seoul-metro-turnstile-data/map/#lat=37.5601&lng=126.9794&z=14.3000"
+  },
+  {
+    "name": "OBJ map tile exporter",
+    "link": "https://hanbyul-here.github.io/tile-exporter/"
+  },
+  {
+    "name": "SVG map tile exporter",
+    "link": "http://svg-exporter.netlify.com/"
   }
 ]
