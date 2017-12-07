@@ -43,7 +43,7 @@ const buildHTMLWithLocalPostData = function (dataPath) {
   let htmlToReturn = '<ul>';
   const data = readLocalData(dataPath);
   for (const post of data) {
-    htmlToReturn += `<li><a href="${post.link}"> ${post.title} </a></li>`;
+    htmlToReturn += `<li><a href="${post.link}"> ${post.name} </a></li>`;
   }
   htmlToReturn += '</ul>';
   return htmlToReturn;
@@ -56,7 +56,7 @@ function writeResultHTML () {
     const baseDOM = readBaseHTML();
 
     const snsLinks = buildHTMLWithLocalData(linkDataPath);
-    const projectLinks = buildHTMLWithLocalData(projectDataPath);
+    const projectLinks = buildHTMLWithLocalPostData(projectDataPath);
     const postLinks = buildHTMLWithLocalPostData(postDataPath);
 
     baseDOM.window.document.getElementById(linkDOMID).innerHTML = snsLinks;

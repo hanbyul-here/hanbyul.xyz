@@ -1,9 +1,5 @@
 [
   {
-    "name": "Earthquakes in Korean Peninsula",
-    "link": "https://hanbyul-here.github.io/earthquakes-in-korea/public/"
-  },
-  {
     "name": "Seoul building explorer",
     "link": "https://hanbyul-here.github.io/seoul-building-explorer"
   },
@@ -18,5 +14,9 @@
   {
     "name": "SVG map tile exporter",
     "link": "http://svg-exporter.netlify.com/"
+  },
+  {
+    "name": "Earthquakes in Korean Peninsula",
+    "link": "https://hanbyul-here.github.io/earthquakes-in-korea/public/"
   }
 ]
